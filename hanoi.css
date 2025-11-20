@@ -1,0 +1,182 @@
+/* ----------- GLOBAL STYLES ----------- */
+body {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  color: #222;
+  overflow-x: hidden;
+}
+
+header {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2.2em;
+  color: #ffffff;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+  color: #f3f3f3;
+  font-weight: 300;
+  margin-top: -10px;
+}
+
+/* ----------- CONTROLS ----------- */
+.controls {
+  margin: 25px auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 15px 30px;
+  width: fit-content;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.controls label {
+  font-weight: 600;
+  margin-right: 10px;
+  color: #fff;
+}
+
+input[type="number"] {
+  width: 70px;
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #ffffff;
+  color: #0078d7;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #0078d7;
+  color: white;
+}
+
+/* ----------- PEGS ----------- */
+.peg-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 340px;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.peg {
+  width: 160px;
+  height: 240px;
+  position: relative;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.peg::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 200px;
+  background: #333;
+  border-radius: 5px;
+}
+
+.peg-label {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+/* ----------- DISKS ----------- */
+.disk {
+  position: absolute;
+  height: 24px;
+  border-radius: 8px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.5s ease;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ----------- INFO PANEL ----------- */
+.info-panel {
+  margin: 40px auto;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.counter-box {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.move-log {
+  max-height: 180px;
+  overflow-y: auto;
+  margin-top: 15px;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.move-log h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #ffd700;
+}
+
+.move-log ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #e3e3e3;
+}
+
+.move-log li {
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+footer {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 14px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postfix Expression Evaluation</title>
+  <link rel="stylesheet" href="eval.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧮 Postfix Expression Evaluation</h1>
+    <p class="subtitle">Enter a postfix expression (operands and operators) and click <b>Evaluate</b>.</p>
+
+    <div class="input-box">
+      <input type="text" id="postfix" placeholder="Example: 23*54*+9-" />
+      <button id="evalBtn">Evaluate</button>
+    </div>
+
+    <div class="output-box">
+      <h3>Result:</h3>
+      <p id="result">—</p>
+    </div>
+
+    <div class="steps-box">
+      <h3>Steps:</h3>
+      <ul id="steps"></ul>
+    </div>
+  </div>
+
+  <script src="eval.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Towers of Hanoi Visualizer</title>
+  <link rel="stylesheet" href="hanoi.css" />
+</head>
+<body>
+  <header>
+    <h1>🧱 Towers of Hanoi</h1>
+    <p class="subtitle">Visualize the classic recursion puzzle in motion</p>
+  </header>
+
+  <div class="controls">
+    <label for="numDisks">Number of Disks:</label>
+    <input type="number" id="numDisks" min="1" max="8" value="3">
+    <button id="startBtn">▶ Start</button>
+  </div>
+
+  <div class="peg-container">
+    <div class="peg" id="pegA">
+      <div class="peg-label">A</div>
+    </div>
+    <div class="peg" id="pegB">
+      <div class="peg-label">B</div>
+    </div>
+    <div class="peg" id="pegC">
+      <div class="peg-label">C</div>
+    </div>
+  </div>
+
+  <div class="info-panel">
+    <div class="counter-box">
+      Step: <span id="stepcount">0</span>
+    </div>
+    <div class="move-log">
+      <h2>Move Log</h2>
+      <ul id="moveList"></ul>
+    </div>
+  </div>
+
+  <footer>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

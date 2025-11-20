@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infix to Postfix Converter</title>
+  <link rel="stylesheet" href="postfix.css">
+</head>
+<body>
+  <header>
+    <h1>🔁 Infix → Postfix Converter</h1>
+    <p class="subtitle">Convert mathematical expressions step-by-step</p>
+  </header>
+
+  <div class="converter-box">
+    <label for="infixInput">Enter Infix Expression:</label>
+    <input type="text" id="infixInput" placeholder="e.g. (A+B)*C-(D/E)">
+    <button id="convertBtn">Convert</button>
+  </div>
+
+  <div class="result-panel">
+    <h2>📜 Postfix Expression:</h2>
+    <div id="postfixOutput" class="output-box">—</div>
+
+    <h2>🧩 Step-by-Step Process:</h2>
+    <div id="stepOutput" class="step-box"></div>
+  </div>
+
+  <footer>
+  
+  </footer>
+
+  <script src="postfix.js"></script>
+</body>
+</html>

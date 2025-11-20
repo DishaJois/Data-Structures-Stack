@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Structures </title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Primary">
+      <a href="home.html" class="nav-logo">Data Structures</a>
+
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <div id="primary-navigation" class="nav-links">
+        <a href="home.html" class="nav-link active" aria-current="page">🏠 Home</a>
+        <a href="hanoi.html" class="nav-link">🧱 Towers of Hanoi</a>
+        <a href="postfix.html" class="nav-link">🔁 Infix → Postfix</a>
+        <a href="prefix.html" class="nav-link">🔄 Infix → Prefix</a>
+        <a href="postfix_eval.html" class="nav-link">🧮 Postfix Evaluation</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h1>Data Structures-Stack</h1>
+      <p class="subtitle">Interactive Tools for Learning Algorithms</p>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="home-container" id="main" tabindex="-1">
+    <section class="card" aria-labelledby="hanoi-title">
+      <h2 id="hanoi-title">🧱 Towers of Hanoi</h2>
+      <p>Visualize the classic recursion puzzle step-by-step with animations and a move counter.</p>
+      <a href="hanoi.html" class="btn" role="button">Open Visualizer</a>
+    </section>
+
+    <section class="card" aria-labelledby="postfix-title">
+      <h2 id="postfix-title">🔁 Infix → Postfix Converter</h2>
+      <p>Convert mathematical infix expressions to postfix form with clear, step-by-step logic.</p>
+      <a href="postfix.html" class="btn" role="button">Open Converter</a>
+    </section>
+
+    <section class="card" aria-labelledby="prefix-title">
+      <h2 id="prefix-title">🔄 Infix → Prefix Converter</h2>
+      <p>Learn how to convert infix expressions to prefix form using stack operations interactively.</p>
+      <a href="prefix.html" class="btn" role="button">Open Converter</a>
+    </section>
+
+    <section class="card" aria-labelledby="evaluation-title">
+      <h2 id="evaluation-title">🧮 Postfix Expression Evaluation</h2>
+      <p>Evaluate postfix expressions step-by-step, showing how operands and operators are processed using a stack.</p>
+      <a href="eval.html" class="btn" role="button">Open Evaluator</a>
+    </section>
+  </main>
+
+  
+
+  <script>
+    // set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.getElementById('primary-navigation');
+
+    navToggle?.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      navLinks.classList.toggle('open');
+    });
+
+    // close mobile nav when a link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('open')) {
+          navLinks.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
