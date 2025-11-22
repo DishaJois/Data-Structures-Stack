@@ -180,3 +180,28 @@ footer {
   margin-bottom: 20px;
   font-size: 14px;
 }
+/* ----------- MOBILE FIXES ----------- */
+@media (max-width: 768px) {
+
+  .peg-container {
+    flex-direction: column;
+    height: auto;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .peg {
+    width: 70%;
+    height: 180px;
+  }
+
+  .controls {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .info-panel {
+    width: 90%;
+  }
+}
+
