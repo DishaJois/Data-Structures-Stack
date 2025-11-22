@@ -144,3 +144,26 @@ button:hover {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ------------ MOBILE FIXES ------------ */
+@media (max-width: 768px) {
+
+  body {
+    height: auto;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .input-box {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
