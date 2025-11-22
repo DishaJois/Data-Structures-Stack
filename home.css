@@ -118,3 +118,34 @@ footer {
   opacity: 0.8;
   color: #fff;
 }
+
+/* ------------------ MOBILE FIXES ------------------ */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .home-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
