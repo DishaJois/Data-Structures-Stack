@@ -137,3 +137,26 @@ footer {
   font-size: 14px;
   opacity: 0.8;
 }
+
+/* ---------------- MOBILE FIXES ---------------- */
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px;
+    height: auto;
+  }
+
+  .converter-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .converter-box input {
+    width: 100%;
+  }
+
+  .result-panel {
+    width: 95%;
+    padding: 20px;
+  }
+}
